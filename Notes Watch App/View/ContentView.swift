@@ -12,6 +12,9 @@ struct ContentView: View {
     @State private var notes: [Note] = [Note]()
     @State private var text: String = ""
     
+    func save() {
+        dump(notes)
+    }
     var body: some View {
         NavigationView {
             VStack {
@@ -19,7 +22,15 @@ struct ContentView: View {
                     TextField("Add new note", text: $text)
                     
                     Button {
+                        guard text.isEmpty == false else { return }
                         
+                        let note = Note(id: UUID(), text: text)
+                        
+                        notes.append(note)
+                        
+                        text = ""
+                        
+                        save()
                     } label: {
                         Image(systemName: "plus.circle")
                             .font(.system(size: 42, weight: .semibold))
@@ -28,6 +39,8 @@ struct ContentView: View {
                         .foregroundColor(.accentColor)
                 }
                 Spacer()
+                
+                Text("\(notes.count)")
             }
             .navigationTitle("Notes")
         }
