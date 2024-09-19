@@ -15,6 +15,8 @@
 		BA42637C2C99D191007984B2 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA42637B2C99D191007984B2 /* Note.swift */; };
 		BA42637F2C9AB1A8007984B2 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA42637E2C9AB1A8007984B2 /* WatchConnectivity.framework */; };
 		BA9839F02C9BFE1A00A62619 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9839EF2C9BFE1A00A62619 /* DetailView.swift */; };
+		BA9839F22C9C07AA00A62619 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9839F12C9C07AA00A62619 /* CreditsView.swift */; };
+		BA9839F52C9C0B8D00A62619 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9839F42C9C0B8D00A62619 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		BA42637E2C9AB1A8007984B2 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS10.5.sdk/System/Library/Frameworks/WatchConnectivity.framework; sourceTree = DEVELOPER_DIR; };
 		BA4263802C9AB1BB007984B2 /* Notes-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Notes-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 		BA9839EF2C9BFE1A00A62619 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		BA9839F12C9C07AA00A62619 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
+		BA9839F42C9C0B8D00A62619 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,7 @@
 		BA4263662C99CC1F007984B2 /* Notes Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				BA9839F32C9C0B6F00A62619 /* Component */,
 				BA4263802C9AB1BB007984B2 /* Notes-Watch-App-Info.plist */,
 				BA42637A2C99D170007984B2 /* Model */,
 				BA4263672C99CC1F007984B2 /* NotesApp.swift */,
@@ -110,6 +115,7 @@
 			children = (
 				BA4263692C99CC1F007984B2 /* ContentView.swift */,
 				BA9839EF2C9BFE1A00A62619 /* DetailView.swift */,
+				BA9839F12C9C07AA00A62619 /* CreditsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -128,6 +134,14 @@
 				BA42637E2C9AB1A8007984B2 /* WatchConnectivity.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA9839F32C9C0B6F00A62619 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				BA9839F42C9C0B8D00A62619 /* HeaderView.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,8 +243,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA42636A2C99CC1F007984B2 /* ContentView.swift in Sources */,
+				BA9839F52C9C0B8D00A62619 /* HeaderView.swift in Sources */,
 				BA9839F02C9BFE1A00A62619 /* DetailView.swift in Sources */,
 				BA4263682C99CC1F007984B2 /* NotesApp.swift in Sources */,
+				BA9839F22C9C07AA00A62619 /* CreditsView.swift in Sources */,
 				BA42637C2C99D191007984B2 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
