@@ -17,6 +17,8 @@ struct DetailView: View {
     var body: some View {
         VStack(alignment: .center, spacing: 3) {
             
+            HeaderView(title: "")
+            
             Spacer()
             ScrollView(.vertical) {
                 Text(note.text)
