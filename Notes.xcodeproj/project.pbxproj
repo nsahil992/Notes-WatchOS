@@ -13,6 +13,8 @@
 		BA42636C2C99CC22007984B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA42636B2C99CC22007984B2 /* Assets.xcassets */; };
 		BA42636F2C99CC22007984B2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA42636E2C99CC22007984B2 /* Preview Assets.xcassets */; };
 		BA42637C2C99D191007984B2 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA42637B2C99D191007984B2 /* Note.swift */; };
+		BA42637F2C9AB1A8007984B2 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA42637E2C9AB1A8007984B2 /* WatchConnectivity.framework */; };
+		BA9839F02C9BFE1A00A62619 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9839EF2C9BFE1A00A62619 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,9 @@
 		BA42636B2C99CC22007984B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA42636E2C99CC22007984B2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BA42637B2C99D191007984B2 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		BA42637E2C9AB1A8007984B2 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS10.5.sdk/System/Library/Frameworks/WatchConnectivity.framework; sourceTree = DEVELOPER_DIR; };
+		BA4263802C9AB1BB007984B2 /* Notes-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Notes-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		BA9839EF2C9BFE1A00A62619 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA42637F2C9AB1A8007984B2 /* WatchConnectivity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +71,7 @@
 			children = (
 				BA4263662C99CC1F007984B2 /* Notes Watch App */,
 				BA42635D2C99CC1F007984B2 /* Products */,
+				BA42637D2C9AB1A7007984B2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +87,7 @@
 		BA4263662C99CC1F007984B2 /* Notes Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				BA4263802C9AB1BB007984B2 /* Notes-Watch-App-Info.plist */,
 				BA42637A2C99D170007984B2 /* Model */,
 				BA4263672C99CC1F007984B2 /* NotesApp.swift */,
 				BA4263792C99D15D007984B2 /* View */,
@@ -101,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				BA4263692C99CC1F007984B2 /* ContentView.swift */,
+				BA9839EF2C9BFE1A00A62619 /* DetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -111,6 +120,14 @@
 				BA42637B2C99D191007984B2 /* Note.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		BA42637D2C9AB1A7007984B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA42637E2C9AB1A8007984B2 /* WatchConnectivity.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA42636A2C99CC1F007984B2 /* ContentView.swift in Sources */,
+				BA9839F02C9BFE1A00A62619 /* DetailView.swift in Sources */,
 				BA4263682C99CC1F007984B2 /* NotesApp.swift in Sources */,
 				BA42637C2C99D191007984B2 /* Note.swift in Sources */,
 			);
@@ -353,6 +371,7 @@
 				DEVELOPMENT_TEAM = DA32Z733P3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Notes-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Notes;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
@@ -383,6 +402,7 @@
 				DEVELOPMENT_TEAM = DA32Z733P3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Notes-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Notes;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
